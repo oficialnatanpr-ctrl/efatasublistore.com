@@ -149,6 +149,7 @@ header :focus-visible{outline-color:#FFD180}
 .svc .slider{width:100%;max-width:460px;justify-self:center}
 .svc:nth-of-type(even) .slider{order:2}
 @media(max-width:820px){.svc:nth-of-type(even) .slider{order:0}}
+.contact{border-top:1px solid var(--line)}
 .fab{background:#0F7A41;border-color:#0F7A41;color:#fff}
 .biglogo{display:block;width:min(200px,60%);height:auto;margin:0 auto 1.5rem;background:#fff;border:1px solid var(--line);border-radius:24px;padding:.6rem}
 @media(prefers-reduced-motion:reduce){h1{animation:none;text-shadow:2px 0 var(--c),-2px 0 var(--m)}html{scroll-behavior:auto}}
@@ -159,8 +160,8 @@ header :focus-visible{outline-color:#FFD180}
   <div class="wrap">
     <a class="logo" href="#topo" aria-label="Efatá Store, início"><img src="data:image/png;base64,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" alt="" width="40" height="40">EFATÁ STORE</a>
     <nav>
-      <a class="l" href="#quem-somos">Quem somos</a>
       <a class="l" href="#servicos">Serviços</a>
+      <a class="l" href="#quem-somos">Quem somos</a>
       <a class="btn wa" data-msg="Olá! Gostaria de fazer um orçamento." href="https://wa.me/554135016265">Orçamento</a>
     </nav>
   </div>
@@ -181,55 +182,7 @@ header :focus-visible{outline-color:#FFD180}
     </div>
   </div>
 
-  <section id="quem-somos" class="about">
-    <div class="wrap top">
-      
-      <div>
-        <h2>Quem somos</h2>
-        <p class="sub">EFATÁ SUBLIMAÇÃO E PERSONALIZAÇÃO</p>
-        <p>A Efata nasce com um propósito que vai além de camisetas e objetos personalizados. Somos uma marca criada para comunicar mensagens que geram impacto, despertam fé, esperança e transformação.</p>
-        <p>Cada produto carrega um significado e uma missão: ser uma porta aberta para tocar vidas por meio da comunicação.</p>
-      </div>
-    </div>
 
-    <div class="wrap story">
-      <div>
-        <h3>O significado de Efatá</h3>
-        <p>A palavra Efatá vem do aramaico “Ephphatha”, que significa “abre-te”, abrir ou porta aberta. Essa palavra foi pronunciada por Jesus em um dos milagres registrados na Bíblia, no evangelho de Marcos 7:34, quando Ele curou um homem surdo e gago.</p>
-        <blockquote>“E, erguendo os olhos ao céu, suspirou e disse-lhe: Efatá, isto é, Abre-te.”<cite>Marcos 7:34</cite></blockquote>
-        <p>Naquele momento, os ouvidos do homem se abriram, sua língua foi destravada e ele passou a ouvir e falar perfeitamente. Esse milagre revela um Deus que abre o que estava fechado, destrava o que estava impedido e restaura a comunicação.</p>
-      </div>
-      <div>
-        <h3>A conexão com nossa história</h3>
-        <p>A Efata também nasce conectada a um milagre pessoal. Assim como naquele relato bíblico, Deus abriu uma porta em nossa história, onde antes havia limitações, desafios e silêncio. A marca surge como um testemunho vivo de que quando Deus diz “Efatá”, portas se abrem, caminhos se alinham e novos começos acontecem.</p>
-        <p>Por isso, a Efata não é apenas uma empresa — é o reflexo de uma porta aberta por Deus.</p>
-      </div>
-    </div>
-
-    <div class="wrap purpose">
-      <h3>Nosso propósito</h3>
-      <p>Acreditamos que a comunicação transforma vidas. Textos, imagens e mensagens têm o poder de alcançar corações, gerar reflexão, despertar fé e anunciar verdades. Cada camiseta, cada objeto personalizado e cada criação da Efata carrega esse propósito:</p>
-      <ul>
-        <li>Ser uma porta aberta para espalhar mensagens que edificam</li>
-        <li>Comunicar valores, fé, esperança e identidade</li>
-        <li>Alcançar pessoas através de palavras e imagens que falam</li>
-        <li>Ser instrumento para que milagres aconteçam na vida de quem recebe e de quem veste</li>
-      </ul>
-    </div>
-
-    <div class="wrap more">
-      <h3>Mais que produtos, mensagens com propósito</h3>
-      <p>Na Efata, não produzimos apenas camisetas. Produzimos mensagens vestíveis, que falam sem precisar de voz. Cada estampa é pensada para comunicar algo maior, algo que ultrapassa o visual e toca o espiritual e o emocional.</p>
-      <p>Cremos que, assim como no milagre do Efatá, Deus continua abrindo ouvidos, destravando línguas e abrindo portas — e cada produto pode ser um instrumento nesse processo.</p>
-    </div>
-
-    <div class="wrap">
-      <div class="closing">
-        <p class="big">EFATÁ: uma porta aberta para o novo.</p>
-        <p>Onde há fé, Deus abre portas. Que cada criação seja uma extensão desse chamado, levando comunicação, significado e transformação a todos que se conectam com a nossa marca.</p>
-      </div>
-    </div>
-  </section>
 
   <div id="servicos">
     <section class="svc">
@@ -307,6 +260,56 @@ header :focus-visible{outline-color:#FFD180}
         <li><h3>Aprovamos juntos</h3><p>Enviamos o orçamento e a prévia da arte para você aprovar.</p></li>
         <li><h3>Produzimos e entregamos</h3><p>Depois da aprovação, produzimos o seu pedido e combinamos a entrega.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <section id="quem-somos" class="about">
+    <div class="wrap top">
+      
+      <div>
+        <h2>Quem somos</h2>
+        <p class="sub">EFATÁ SUBLIMAÇÃO E PERSONALIZAÇÃO</p>
+        <p>A Efata nasce com um propósito que vai além de camisetas e objetos personalizados. Somos uma marca criada para comunicar mensagens que geram impacto, despertam fé, esperança e transformação.</p>
+        <p>Cada produto carrega um significado e uma missão: ser uma porta aberta para tocar vidas por meio da comunicação.</p>
+      </div>
+    </div>
+
+    <div class="wrap story">
+      <div>
+        <h3>O significado de Efatá</h3>
+        <p>A palavra Efatá vem do aramaico “Ephphatha”, que significa “abre-te”, abrir ou porta aberta. Essa palavra foi pronunciada por Jesus em um dos milagres registrados na Bíblia, no evangelho de Marcos 7:34, quando Ele curou um homem surdo e gago.</p>
+        <blockquote>“E, erguendo os olhos ao céu, suspirou e disse-lhe: Efatá, isto é, Abre-te.”<cite>Marcos 7:34</cite></blockquote>
+        <p>Naquele momento, os ouvidos do homem se abriram, sua língua foi destravada e ele passou a ouvir e falar perfeitamente. Esse milagre revela um Deus que abre o que estava fechado, destrava o que estava impedido e restaura a comunicação.</p>
+      </div>
+      <div>
+        <h3>A conexão com nossa história</h3>
+        <p>A Efata também nasce conectada a um milagre pessoal. Assim como naquele relato bíblico, Deus abriu uma porta em nossa história, onde antes havia limitações, desafios e silêncio. A marca surge como um testemunho vivo de que quando Deus diz “Efatá”, portas se abrem, caminhos se alinham e novos começos acontecem.</p>
+        <p>Por isso, a Efata não é apenas uma empresa — é o reflexo de uma porta aberta por Deus.</p>
+      </div>
+    </div>
+
+    <div class="wrap purpose">
+      <h3>Nosso propósito</h3>
+      <p>Acreditamos que a comunicação transforma vidas. Textos, imagens e mensagens têm o poder de alcançar corações, gerar reflexão, despertar fé e anunciar verdades. Cada camiseta, cada objeto personalizado e cada criação da Efata carrega esse propósito:</p>
+      <ul>
+        <li>Ser uma porta aberta para espalhar mensagens que edificam</li>
+        <li>Comunicar valores, fé, esperança e identidade</li>
+        <li>Alcançar pessoas através de palavras e imagens que falam</li>
+        <li>Ser instrumento para que milagres aconteçam na vida de quem recebe e de quem veste</li>
+      </ul>
+    </div>
+
+    <div class="wrap more">
+      <h3>Mais que produtos, mensagens com propósito</h3>
+      <p>Na Efata, não produzimos apenas camisetas. Produzimos mensagens vestíveis, que falam sem precisar de voz. Cada estampa é pensada para comunicar algo maior, algo que ultrapassa o visual e toca o espiritual e o emocional.</p>
+      <p>Cremos que, assim como no milagre do Efatá, Deus continua abrindo ouvidos, destravando línguas e abrindo portas — e cada produto pode ser um instrumento nesse processo.</p>
+    </div>
+
+    <div class="wrap">
+      <div class="closing">
+        <p class="big">EFATÁ: uma porta aberta para o novo.</p>
+        <p>Onde há fé, Deus abre portas. Que cada criação seja uma extensão desse chamado, levando comunicação, significado e transformação a todos que se conectam com a nossa marca.</p>
+      </div>
     </div>
   </section>
 
